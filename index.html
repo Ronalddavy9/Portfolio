@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles.css">
+    <title>RD Desenvolvedor Frontend</title>
+</head>
+<body>
+<!-- SEÇÃO INÍCIO -->
+<section id="inicio">
+  <div class="conteudo">
+      <header>
+          <div class="conteudo-header">
+              <h1>/RD/</h1>
+              <nav id="nav" class="">
+                  <ul id="links">
+                      <li><a href="#inicio" class="selecionado" onclick="selecionar(this)">INÍCIO</a></li>
+                      <li><a href="#sobremim" onclick="selecionar(this)">SOBRE MIM</a></li>
+                      <li><a href="#tecnologias" onclick="selecionar(this)">TECNOLOGIAS</a></li>
+                      <li><a href="#projetos" onclick="selecionar(this)">PROJETOS</a></li>
+                      <li><a href="#contato" onclick="selecionar(this)">CONTATO</a></li>
+                  </ul>
+              </nav>
+
+              <!-- Ícone do menu responsivo -->
+              <div id="icone-nav" onclick="menuResponsivo()">
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+
+              <div class="redes">
+                  <a href="https://github.com/Ronalddavy9" target="_blank"><i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/ronald-davy/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://www.instagram.com/_ronalddavy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+          </div>
+      </header>   
+      <div class="apresentacao">
+          <p class="bem-vindo">Bem-vindos</p>
+          <h2>Eu sou <span>Ronald Davy</span>, Desenvolvedor Frontend</h2>
+          <p class="descricao">Bem-vindo ao meu portfólio de desenvolvimento frontend! Aqui você encontrará projetos que demonstram minhas habilidades em criar interfaces atraentes e funcionais. Conheça meu trabalho e descubra como posso contribuir para seus projetos digitais.</p>
+          <a href="#projetos">Ir para Projetos</a>
+      </div>
+  </div>
+</section>
+
+
+   <!-- SEÇÃO SOBRE MIM -->
+<section id="sobremim">
+    <div class="conteiner-foto">
+        <img src="img/foto1.jpg" alt="">
+    </div>
+    <div class="sobremim">
+        <p class="titulo-secao">Sobre Mim</p>
+        <h3>Desenvolvedor Frontend</h3>
+        <p> Em busca de uma oportunidade profissional. Gosto de criar interfaces atraentes e funcionais, e estou constantemente aprendendo e aprimorando minhas habilidades para me tornar um desenvolvedor frontend qualificado.</p>
+        <p>Venho dedicando tempo e esforço para aprender as principais tecnologias utilizadas no desenvolvimento frontend, incluindo HTML, CSS e JavaScript. Também estou familiarizado com frameworks como Reactjs. </br>
+        Além disso, também possuo conhecimentos em tecnologias como Node.js e MySQL.</p>
+        <a href="#">Baixar CV</a>
+    </div>
+</section>
+
+    <!-- SEÇÃO SKILLS -->
+<section id="tecnologias">
+    <h3 class="titulo-secao">Tecnologias</h3>
+    <div class="fila">
+        <div class="tecnologia">
+            <span class="icone"><i class="fa-brands fa-js" style="color: #F2D027;"></i></span>
+            <h4>Javascript</h4>
+            <hr>
+            <p>Proficiente em JavaScript para desenvolvimento web, com experiência em projetos front-end. Conhecimentos sólidos em manipulação do DOM, uso de bibliotecas e frameworks como jQuery e React. Capacidade de escrever código limpo e eficiente, utilizando boas práticas de programação.</p>
+        </div>
+        <div class="tecnologia">
+            <span class="icone"><i class="fa-brands fa-html5" style="color: #324FA6;"></i></span>
+            <h4>HTML</h4>
+            <hr>
+            <p>Experiência sólida em HTML para desenvolvimento web, com conhecimento avançado em marcação e estruturação de páginas. Capacidade de criar layouts responsivos e acessíveis, utilizando as melhores práticas de semântica e validação.</p>
+        </div>
+        <div class="tecnologia">
+            <span class="icone"><i class="fa-brands fa-css3-alt" style="color: #308AD9;"></i></span>
+            <h4>CSS</h4>
+            <hr>
+            <p>Experiência sólida em CSS para estilização de páginas web, com conhecimento avançado em seletores, propriedades e valores. Utilizando media queries e flexbox. Conhecimento em técnicas avançadas de posicionamento, como Grid Layout. Familiaridade com a criação de animações e transições suaves usando keyframes e propriedades de transição. Habilidade em aplicar estilos personalizados e elegantes a elementos HTML, utilizando seletores específicos e pseudo-classes.</p>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="tecnologia">
+            <span class="icone"><i class="fa-brands fa-react" style="color: #44C1F2;"></i></span>
+            <h4>Reactjs</h4>
+            <hr>
+            <p>ReactJS, um dos frameworks JavaScript mais populares para o desenvolvimento de interfaces de usuário. Conhecimento avançado em componentes, estado e ciclo de vida, permitindo a criação de aplicações web interativas e reativas. Capacidade de criar componentes reutilizáveis e modularizados, promovendo a manutenção e escalabilidade do código. Familiaridade com o uso de JSX, que combina JavaScript e HTML para facilitar a criação de interfaces intuitivas. Experiência em gerenciamento de estado utilizando o Redux ou o Context API do React, garantindo uma gestão eficiente e centralizada dos dados. Habilidade em integração com APIs e consumo de dados assíncronos por meio de bibliotecas como o axios ou o fetch API.</p>
+        </div>
+        <div class="tecnologia">
+            <span class="icone"><i class="fa-brands fa-node" style="color: #37B40E;"></i></span>
+            <h4>Nodejs</h4>
+            <hr>
+            <p>Desenvolvimento de aplicações back-end em JavaScript. Conhecimento avançado em manipulação de arquivos, operações de entrada/saída e gerenciamento de pacotes com o NPM (Node Package Manager). Capacidade de construir servidores web escaláveis e eficientes usando frameworks populares como o Express.js. Familiaridade com a criação de APIs RESTful e a implementação de rotas e controladores. Experiência em integração de bancos de dados.</p>
+        </div>
+        <div class="tecnologia">
+            <span class="icone"><i class="fa-solid fa-database" style="color: #E48E18;"></i></span>
+            <h4>MySQL</h4>
+            <hr>    
+            <p>Um sistema de gerenciamento de banco de dados relacional amplamente utilizado. Conhecimento em criação e manipulação de bancos de dados, tabelas, índices e consultas SQL. Capacidade de projetar e otimizar esquemas de banco de dados, levando em consideração a eficiência e a integridade dos dados. </p>
+        </div>
+    </div>
+</section>
+
+   <!-- SEÇÃO HABILIDADES -->
+<div class="conteiner-habili" id="habilidades">
+    <h3 class="titulo-secao">HABILIDADES</h3>
+    <div class="habilidade">
+        <div class="info">
+            <p><span class="lista"></span>Html & Css</p>
+            <span class="porcentagem">95%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="html"></div>
+        </div>
+    </div>
+    <div class="habilidade">
+        <div class="info">
+            <p><span class="lista"></span>Javascript</p>
+            <span class="porcentagem">80%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="js"></div>
+        </div>
+    </div>
+    <div class="habilidade">
+        <div class="info">
+            <p><span class="lista"></span>MySQL</p>
+            <span class="porcentagem">80%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="bd"></div>
+        </div>
+    </div>
+    <div class="habilidade">
+        <div class="info">
+            <p><span class="lista"></span>ReactJS</p>
+            <span class="porcentagem">85%</span>
+        </div>
+
+        <div class="barra">
+            <div class="" id="ps"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- S E Ç Ã O  P O R T I F O L I O -->
+    <section class="swiper mySwiper" id="projetos">
+        <h3 class="titulo-secao">PROJETOS</h3>
+        <div class="swiper-wrapper">
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="/img/projeto1.jpg" alt="card image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">Lading-page-G502 </span>
+              <p class="card__text">site de um produto da Logitech, usando HTML, CSS, Javascript e Swiper JS.</p>
+              <div class="icons">
+                <a href="https://github.com/Ronalddavy9/Lading-page-G502" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://landing-page-g502.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="/img/projeto2.jpg" alt="card image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">controle-financeiro</span>
+              <p class="card__text">controle financeiro criado usando React.js</p>
+              <div class="icons">
+                <a href="https://github.com/Ronalddavy9/App-financas" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://aplicativo-financas.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="/img/projeto3.jpg" alt="card image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">Tela-login</span>
+              <p class="card__text">tela de login e cadadstro criado em javascript</p>
+              <div class="icons">
+                <a href="https://github.com/Ronalddavy9/Tela-login" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://tela-signin-signup.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="/img/projeto4.jpg" alt="card image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title"> App-clima</span>
+              <p class="card__text">appclima criado usando Html, Css, javascript consumindo API Open Weather.</p>
+              <div class="icons">
+                <a href="https://github.com/Ronalddavy9/Appclima" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://aplicativoclima.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="/img/projeto5.jpg" alt="card image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">#Projeto futuro#</span>
+              <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+              <div class="icons">
+                <a href="https://github.com/Ronalddavy9/Lading-page-G502" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://landing-page-g502.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i></a>
+              </div>
+            </div>
+          </div>
+            
+              <div class="card swiper-slide">
+                <div class="card__image">
+                  <img src="/img/projeto6.jpg" alt="card image">
+                </div>
+                <div class="card__content">
+                  <span class="card__title">#Projeto futuro#</span>
+
+                  <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                  <div class="icons">
+                    <a href="https://github.com/Ronalddavy9/Lading-page-G502" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://landing-page-g502.netlify.app" target="_blank"><i class="fa-solid fa-eye"></i></a>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+      </section>
+
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato">
+      <h3 class="titulo-secao">Entre em contato</h3>
+      <div class="conteiner-form">
+        <form id="contact-form" action="https://formsubmit.co/ronalddavy9@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/Sucesso.html">
+          <div class="fila mitad">
+            <input type="text" name="nome" placeholder="Nome Completo *" class="input-mitad" required>
+            <input type="email" name="email" placeholder="Email" class="input-mitad">
+          </div>
+          <div class="fila">
+            <input type="text" name="tema" placeholder="Tema..." class="input-full">
+          </div>
+          <div class="fila">
+            <textarea name="mensagem" cols="30" rows="10" placeholder="Sua mensagem..." class="input-full"></textarea>
+          </div>
+          <input type="submit" value="Enviar Mensagem" class="btn-enviar">
+    
+        </form>
+      </div>
+    </section>    
+
+    <!-- S E Ç Ã O  F O O T E R -->
+    <footer>
+        <p>&copy; 2023 Ronald Davy</p>
+        <div class="redes">
+            <a href="https://github.com/Ronalddavy9" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ronald-davy/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/_ronalddavy/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+</header>   
+
+ </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
