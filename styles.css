@@ -617,41 +617,50 @@
 
             @media screen and (max-width: 768px) {
                 .slide-content {
-                    margin: 0 10px;
+                  margin: 0 10px;
                 }
                 .swiper-navBtn {
-                    display: none;
+                  display: none;
                 }
-            }
-
-            @media screen and (max-width: 994px) {
+              }
+              
+              @media screen and (max-width: 480px) {
+                #inicio .conteudo .apresentacao p.bem-vindo {
+                  margin-top: 100px;
+                }
+              }
+              
+              @media screen and (max-width: 994px) {
                 .redes {
-                    display: none;
+                  display: none;
                 }
                 nav {
-                    display: none;
+                  display: none;
                 }
                 nav.responsivo {
-                    display: block;
-                    background-color: rgba(0, 0, 0, .8);
-                    width: 100%;
-                    position: absolute;
-                    top: 100px;
-                    left: 0;
-                    padding: 10px 0;
+                  display: block;
+                  background-color: rgba(0, 0, 0, .8);
+                  width: 100%;
+                  position: absolute;
+                  top: 100px;
+                  left: 0;
+                  padding: 10px 0;
+                  
                 }
                 nav.responsivo ul {
-                    display: block !important;
-                    text-align: center;
+                  text-align: center;
+                  margin: 0;
+                  padding: 0;
+                  display: block !important;
                 }
                 nav.responsivo ul li {
-                    margin: 5px 0;
+                  margin: 10px 0;
                 }
                 #icone-nav {
-                    display: block;
+                  display: block;
                 }
                 #inicio .conteudo .apresentacao h2 {
-                    font-size: 30px;
+                  font-size: 30px;
                 }
                 /* seção SOBRE MIM */
                 #sobremim {
@@ -718,3 +727,4 @@
                     margin-bottom: 15px;
                 }
             }
+              
